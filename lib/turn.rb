@@ -49,7 +49,7 @@ def turn(board)
   value=gets.strip
   index=input_to_index(value)
   count=1
-  while count!=0
+  until count==0
       if valid_move?(board,index)
          move(board,index,value='X')
          display_board(move)
