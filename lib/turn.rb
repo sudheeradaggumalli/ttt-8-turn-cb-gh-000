@@ -48,14 +48,17 @@ def turn(board)
   puts "Please enter 1-9:"
   value=gets.strip
   index=input_to_index(value)
-  until valid_move?(board,index)
-      if valid_move?(board,index)
-         move(board,index,value='X')
-         display_board(board)
-      else
+  if valid_move?(board,index)
+    move(board,index,value='X')
+    display_board(board)
+  else
+    until valid_move?(board,index)
         puts "Invalid position reenter the value"
         value=gets.strip
         index=input_to_index(value)
-      end
+    end
+    move(board,index,value='X')
+    display_board(board)
+    
   end
 end
