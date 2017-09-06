@@ -51,7 +51,7 @@ def turn(board)
   until valid_move?(board,index)
       if valid_move?(board,index)
          move(board,index,value='X')
-         display_board(move)
+         display_board(board)
       else
         puts "Invalid position reenter the value"
         value=gets.strip
