@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 board=[" "," "," "," "," "," "," "," "," "]
-puts "Welcome to Tic-tac-Toe!"
-display_board(board)
+#puts "Welcome to Tic-tac-Toe!"
+#display_board(board)
 puts "Please enter 1-9:"
 value=gets.strip
 index=input_to_index(value)
