@@ -2,17 +2,8 @@
 board=[" "," "," "," "," "," "," "," "," "]
 puts "Welcome to Tic-tac-Toe!"
 display_board(board)
-puts "where do you wanna go"
+puts "Please enter 1-9:"
 value=gets.strip
-/*ask for input
-get input
-convert input to index
-if index is valid
-  make the move for index
-  show the board
-else
-  ask for input again until you get a valid input
-end*/
 index=input_to_index(value)
 until valid_move?(board,index)
     if valid_move?(board,index)
